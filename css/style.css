@@ -3,3 +3,63 @@
     --eerie-black: #1A1B25;
     --soft-white: #FDFDFF;
 }
+
+body{
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  background-color: var(--egg-shell);
+}
+
+section{
+  height: 100vh;
+  margin-top: 37px;
+}
+
+.menu-toggle{
+  height: 5px;
+  width: 37px;
+  border-radius: 2px;
+  background-color: var(--soft-white);
+}
+
+.menu-toggle::before{
+  content: " ";
+  display: block;
+  height: inherit;
+  width: inherit;
+  background-color: inherit;
+  border-radius: inherit;
+  position: absolute;
+  margin-top: -10px;
+}
+
+.menu-toggle::after{
+  content: " ";
+  display: block;
+  height: inherit;
+  width: inherit;
+  background-color: inherit;
+  border-radius: inherit;
+  position: absolute;
+  margin-top: 10px;
+}
+
+.main-header{
+  height: 140px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 66px;
+  align-items: center;
+}
+
+img.logo{
+  width: 100px;
+  height: 100px;
+}
+
+section.hero{
+  background-image: url('../img/hero-image.png');
+  background-size: cover;
+  margin-top: 0;
+}
