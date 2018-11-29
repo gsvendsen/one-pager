@@ -11,6 +11,11 @@ src: url('font/Roboto.woff') format('woff');
     --soft-white: #FDFDFF;
 }
 
+* {
+  margin:0;
+  padding:0;
+}
+
 body{
   width: 100%;
   max-width: 1440px;
@@ -32,6 +37,9 @@ section{
   justify-content: space-between;
   padding: 0 66px;
   align-items: center;
+  width: 100%;
+  position: fixed;
+  box-sizing: border-box;
 }
 
 img.logo{
