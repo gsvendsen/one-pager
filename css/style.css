@@ -1,3 +1,5 @@
+/* Global Styling */
+
 :root {
     --egg-shell: #F2E5D7;
     --eerie-black: #1A1B25;
@@ -14,6 +16,32 @@ body{
 section{
   height: 100vh;
   margin-top: 37px;
+}
+
+/* Header Styling */
+
+.main-header{
+  height: 140px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 66px;
+  align-items: center;
+}
+
+img.logo{
+  width: 100px;
+  height: 100px;
+}
+
+/* Menu in header Styling */
+
+.menu-container{
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
 }
 
 .menu-toggle{
@@ -45,18 +73,7 @@ section{
   margin-top: 10px;
 }
 
-.main-header{
-  height: 140px;
-  display: flex;
-  justify-content: space-between;
-  padding: 0 66px;
-  align-items: center;
-}
-
-img.logo{
-  width: 100px;
-  height: 100px;
-}
+/* Section 1 Styling */
 
 section.hero{
   background-image: url('../img/hero-image.png');
