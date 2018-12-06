@@ -397,6 +397,9 @@ footer {
     background-color: var(--soft-white);
   }
 
+  section.specifications>.text-content{
+    width:100%;
+  }
 
   section.specifications>.image-content{
     height:100%;
@@ -407,14 +410,36 @@ footer {
 
   ul {
     padding:0 0 0 25px;
-    width:100%;
+    width:80%;
   }
 
   section.health{
-    flex-direction:column-reverse;
+    flex-direction:column;
     padding:100px 0 0 0;
     box-sizing: border-box;
     background-color: var(--soft-white);
+  }
+
+  section.health>.text-content{
+    width:100%;
+    height:auto;
+  }
+
+  section.health>.image-content{
+    width:100%;
+    height:200px;
+    margin: 25px 0 25px 0;
+    background-position: center;
+  }
+
+  .subheader {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    font-size: 30px;
+    color: #000000;
+    padding:0 0 0 25px;
   }
 
 }
