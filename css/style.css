@@ -38,6 +38,20 @@ h1 {
   color: #FFFFFF;
 }
 
+ul {
+  list-style: none;
+  margin:20px 0 0 0;
+}
+
+li {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal;
+  font-size: 24px;
+  margin:5px;
+}
+
 /* Header Styling */
 
 .main-header{
@@ -148,10 +162,26 @@ section.lifestyle{
   color: #181818;
 }
 
-.image-content {
+.lifestyle>.image-content {
   height:100%;
   width:50%;
   background-image: url('../img/winter-image.png');
+}
+
+/* SPECIFICATIONS */
+section.specifications{
+  height:100vh;
+  width:100%;
+  display:flex;
+}
+
+.specifications>.image-content {
+  height:100%;
+  width:50%;
+  background-image: url('../img/spec-image.png');
+  background-size:contain;
+  background-repeat: no-repeat;
+  background-color:var(--soft-white);
 }
 
 /* ANIMATIONS */
