@@ -42,6 +42,10 @@ section{
   box-sizing: border-box;
 }
 
+.main-header.switch{
+  flex-direction: row-reverse;
+}
+
 img.logo{
   width: 100px;
   height: 100px;
@@ -65,7 +69,7 @@ img.logo{
   background-color: var(--soft-white);
 }
 
-.menu-toggle::before{
+.menu-toggle::before, .menu-toggle::after{
   content: " ";
   display: block;
   height: inherit;
@@ -73,18 +77,31 @@ img.logo{
   background-color: inherit;
   border-radius: inherit;
   position: absolute;
+}
+
+.menu-toggle::before{
   margin-top: -10px;
 }
 
-.menu-toggle::after{
-  content: " ";
-  display: block;
-  height: inherit;
-  width: inherit;
-  background-color: inherit;
-  border-radius: inherit;
-  position: absolute;
+.menu-toggle::after {
   margin-top: 10px;
+}
+
+.switch > .menu-container > .menu-toggle{
+  background-color: var(--eerie-black);
+}
+
+/* .menu-all{
+  position: fixed;
+  background-color: var(--soft-white);
+  padding: 0 66px;
+  height: 100vh;
+  width: 100%;
+} */
+
+.menu-all ul{
+  width: 200px;
+  list-style: none;
 }
 
 /* Section 1 Styling */
@@ -95,7 +112,15 @@ section.hero{
   margin-top: 0;
 }
 
-/* Lifestyle section styling */
+section.hero h1{
+  font-size: 96px;
+  position: absolute;
+  color: var(--soft-white);
+  padding-left: 112px;
+  top: 40%;
+}
+
+/* Lifestyle section 2 styling */
 
 section.lifestyle{
   height:100vh;
