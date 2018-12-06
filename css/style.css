@@ -359,7 +359,7 @@ footer {
     width:100%;
     height:500px;
     background-position: center;
-    margin:25px 0 25px 0;
+    margin:25px 0 50px 0;
   }
 
   .main-header {
@@ -388,6 +388,33 @@ footer {
     line-height: normal;
     font-size: 18px;
     color: #000000;
+  }
+
+  section.specifications{
+    flex-direction:column-reverse;
+    padding:100px 0 0 0;
+    box-sizing: border-box;
+    background-color: var(--soft-white);
+  }
+
+
+  section.specifications>.image-content{
+    height:100%;
+    width:100%;
+    background-image: url("../img/mobile-spec-image.png");
+    background-position: center;
+  }
+
+  ul {
+    padding:0 0 0 25px;
+    width:100%;
+  }
+
+  section.health{
+    flex-direction:column-reverse;
+    padding:100px 0 0 0;
+    box-sizing: border-box;
+    background-color: var(--soft-white);
   }
 
 }
