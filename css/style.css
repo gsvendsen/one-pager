@@ -141,7 +141,7 @@ section.lifestyle{
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding:95px;
+  padding:0 50px 0 50px;
   box-sizing: border-box;
 }
 
@@ -150,7 +150,7 @@ section.lifestyle{
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-  font-size: 72px;
+  font-size: 65px;
   color: #181818;
 }
 
@@ -158,7 +158,7 @@ section.lifestyle{
   font-style: normal;
   font-weight: normal;
   line-height: normal;
-  font-size: 24px;
+  font-size: 20px;
   color: #181818;
 }
 
@@ -182,6 +182,29 @@ section.specifications{
   background-size:contain;
   background-repeat: no-repeat;
   background-color:var(--soft-white);
+}
+
+/* HEALTH & FITNESS */
+section.health{
+  height:100vh;
+  width:100%;
+  display:flex;
+}
+.health>.image-content {
+  height:100%;
+  width:50%;
+  background-image: url('../img/health-image.png');
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-color:var(--soft-white);
+}
+
+.article-image {
+
+}
+
+.health>.text-content>.text>* {
+  margin:10px 0 10px 0;
 }
 
 /* ANIMATIONS */
