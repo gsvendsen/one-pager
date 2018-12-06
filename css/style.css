@@ -24,9 +24,52 @@ body{
   font-family: roboto, sans-serif;
 }
 
+button {
+  border:black solid 2px;
+  color:black;
+  background-color:var(--egg-shell);
+  border-radius: 8px;
+  font-size:24px;
+  padding:15px 50px 15px 50px;
+  cursor:pointer;
+}
+
 section{
   height: 100vh;
   margin-top: 37px;
+}
+
+h1 {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal;
+  font-size: 96px;
+  color: #FFFFFF;
+}
+
+h2 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  font-size: 72px;
+  text-align: center;
+  color: #000000;
+}
+
+ul {
+  list-style: none;
+  margin:20px 0 0 0;
+}
+
+li {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 150%;
+  font-size: 20px;
+  margin:5px;
 }
 
 /* Header Styling */
@@ -35,7 +78,7 @@ section{
   height: 140px;
   display: flex;
   justify-content: space-between;
-  padding: 0 66px;
+  padding: 0 50px;
   align-items: center;
   width: 100%;
   position: fixed;
@@ -47,11 +90,15 @@ section{
 }
 
 img.logo{
-  width: 100px;
-  height: 100px;
+  width: 60px;
+  height: 60px;
 }
 
 /* Menu in header Styling */
+
+.expander {
+  width:50px;
+}
 
 .menu-container{
   width: 50px;
@@ -110,6 +157,10 @@ section.hero{
   background-image: url('../img/hero-image.png');
   background-size: cover;
   margin-top: 0;
+  display:flex;
+  align-items: center;
+  padding:0 0 0 100px;
+  box-sizing: border-box;
 }
 
 section.hero h1{
@@ -134,9 +185,8 @@ section.lifestyle{
   background-color:var(--soft-white);
   display:flex;
   justify-content: center;
-  align-items: center;
   flex-direction: column;
-  padding:95px;
+  padding:0 70px 0 50px;
   box-sizing: border-box;
 }
 
@@ -145,20 +195,292 @@ section.lifestyle{
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-  font-size: 72px;
+  font-size: 50px;
   color: #181818;
+  margin:0 0 5px 0;
 }
 
 .subtext {
   font-style: normal;
   font-weight: normal;
   line-height: normal;
-  font-size: 24px;
+  font-size: 16px;
   color: #181818;
 }
 
-.image-content {
+.lifestyle>.image-content {
   height:100%;
   width:50%;
   background-image: url('../img/winter-image.png');
+}
+
+/* SPECIFICATIONS */
+section.specifications{
+  height:100vh;
+  width:100%;
+  display:flex;
+}
+
+.specifications>.image-content {
+  height:100%;
+  width:50%;
+  background-image: url('../img/spec-image.png');
+  background-size:contain;
+  background-repeat: no-repeat;
+  background-color:var(--soft-white);
+}
+
+/* HEALTH & FITNESS */
+section.health{
+  height:100vh;
+  width:100%;
+  display:flex;
+}
+.health>.image-content {
+  height:100%;
+  width:50%;
+  background-image: url('../img/health-image.png');
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-color:var(--soft-white);
+}
+
+.health>.text-content>.text>.image-content {
+  margin: 20px 0 20px 0;
+}
+
+.article-image {
+
+}
+
+.health>.text-content>.text>* {
+  margin:10px 0 10px 0;
+}
+
+/* MAKE IT YOURS */
+section.buy{
+  height:100vh;
+  width:100%;
+  display:flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+  background-color:var(--soft-white);
+}
+
+.buy-image {
+  width:40%;
+  height:auto;
+  margin:20px 0 40px 0;
+}
+/* FOOTER */
+section.footer{
+  height:50vh;
+  width:100%;
+  display:flex;
+  flex-direction:row;
+  justify-content: center;
+  align-items: center;
+  background-color:var(--soft-white);
+}
+
+.footer>.footer-list {
+  width:50%;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction:column;
+}
+
+.footer-list>li>a{
+  text-decoration: none;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal;
+  color: #000000;
+}
+
+.footer-list > li {
+  margin: 20px;
+}
+
+.footer-list.middle-border {
+  border-right:1px solid black;
+}
+
+footer {
+  height:50vh;
+  width:100%;
+}
+
+.mobile {
+  display:none;
+}
+
+/* ANIMATIONS */
+
+.fade-in {
+	-webkit-animation: fade-in 2.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: fade-in 2.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+  .mobile {
+    display:block;
+  }
+
+  .desktop {
+    display:none;
+  }
+
+  h1 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 48px;
+    color: #FFFFFF;
+  }
+
+  section.hero {
+    background-image:url("../img/hero-mobile.png");
+    background-size:contain;
+    padding:0 0 0 45px;
+  }
+
+  section.lifestyle{
+    flex-direction:column-reverse;
+    padding:100px 0 0 0;
+    box-sizing: border-box;
+    background-color: var(--soft-white);
+  }
+
+  section.lifestyle>.text-content{
+    width:100%;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  section.lifestyle>.image-content{
+    width:100%;
+    height:500px;
+    background-position: center;
+    margin:25px 0 50px 0;
+  }
+
+  .main-header {
+    padding:
+  }
+
+  .text-content {
+    padding:0;
+  }
+
+  .header {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    font-size: 36px;
+    color: #1A1B25;
+    padding:0 0 0 25px;
+  }
+
+  .subtext {
+    padding: 0 45px 0 25px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 18px;
+    color: #000000;
+  }
+
+  section.specifications{
+    flex-direction:column-reverse;
+    padding:100px 0 0 0;
+    box-sizing: border-box;
+    background-color: var(--soft-white);
+  }
+
+  section.specifications>.text-content{
+    width:100%;
+  }
+
+  section.specifications>.image-content{
+    height:100%;
+    width:100%;
+    background-image: url("../img/mobile-spec-image.png");
+    background-position: center;
+  }
+
+  ul {
+    padding:0 0 0 25px;
+    width:80%;
+  }
+
+  h2 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    font-size: 36px;
+    color: #000000;
+  }
+
+  section.health{
+    flex-direction:column;
+    padding:100px 0 0 0;
+    box-sizing: border-box;
+    background-color: var(--soft-white);
+  }
+
+  section.health>.text-content{
+    width:100%;
+    height:auto;
+  }
+
+  section.health>.image-content{
+    width:100%;
+    height:200px;
+    margin: 25px 0 25px 0;
+    background-position: center;
+  }
+
+  .subheader {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    font-size: 30px;
+    color: #000000;
+    padding:0 0 0 25px;
+  }
+
+  .buy-image {
+    width:90%;
+  }
+
+  .footer-list {
+    padding:0;
+  }
 }
