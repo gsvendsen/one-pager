@@ -27,7 +27,7 @@ body{
 button {
   border:black solid 2px;
   color:black;
-  background-color:var(--egg-shell);
+  background-color: var(--egg-shell);
   border-radius: 8px;
   font-size:24px;
   padding:15px 50px 15px 50px;
@@ -78,7 +78,7 @@ li {
   height: 140px;
   display: flex;
   justify-content: space-between;
-  padding: 0 50px;
+  padding: 0 35px;
   align-items: center;
   width: 100%;
   position: fixed;
@@ -93,6 +93,11 @@ li {
 img.logo{
   width: 60px;
   height: 60px;
+  display: none;
+}
+
+img.logo.logo_display{
+  display: block;
 }
 
 /* Menu in header Styling */
@@ -102,9 +107,10 @@ img.logo{
 }
 
 .menu-container{
-  width: 50px;
-  height: 50px;
+  width: 70px;
+  height: 70px;
   display: flex;
+  border-radius: 50%;
   justify-content: center;
   align-items: center;
   cursor: pointer;
@@ -115,6 +121,10 @@ img.logo{
   width: 37px;
   border-radius: 2px;
   background-color: var(--soft-white);
+}
+
+.menu-toggle__blackout{
+  background-color: #1A1B25;
 }
 
 .menu-toggle::before, .menu-toggle::after{
@@ -144,6 +154,10 @@ img.logo{
   background-color: var(--egg-shell);
   transform: scale(0,0);
   transition: transform 0.2s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 500;
   height: 100vh;
   width: 100vw;
 }
@@ -152,11 +166,16 @@ img.logo{
   transform: scale(1,1);
 }
 
+.no-scroll {
+  overflow-y: hidden;
+}
+
 /* Section 1 Styling */
 
 section.hero{
   background-image: url('../img/hero-image.png');
   background-size: cover;
+  background-repeat: no-repeat;
   margin-top: 0;
   display:flex;
   align-items: center;
@@ -285,7 +304,7 @@ section.footer{
   background-color:var(--soft-white);
 }
 
-.footer>.footer-list {
+.footer-list {
   width:50%;
   display:flex;
   align-items: center;
@@ -364,8 +383,13 @@ footer {
 
   section.hero {
     background-image:url("../img/hero-mobile.png");
-    background-size:contain;
+    background-size: cover;
+    background-repeat: no-repeat;
     padding:0 0 0 45px;
+  }
+  
+  section.hero h1 {
+    padding:0;
   }
 
   section.lifestyle{
@@ -389,7 +413,7 @@ footer {
   }
 
   .main-header {
-    padding:
+    padding: 0 15px;
   }
 
   .text-content {
@@ -403,7 +427,7 @@ footer {
     line-height: normal;
     font-size: 36px;
     color: #1A1B25;
-    padding:0 0 0 25px;
+    padding: 0 0 0 25px;
   }
 
   .subtext {

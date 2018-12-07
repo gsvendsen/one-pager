@@ -10,31 +10,36 @@
 <body>
   <header class="main-header">
     <div class="expander"></div>
-
-    <img class="logo" src="./img/logotype.png" alt="logo" />
-
+    
+    <div class="logo-container">
+      <img class="logo logo_display" src="./img/logotype_white.png" alt="logo" />
+      <img class="logo" src="./img/logotype_black.png" alt="logo" />
+    </div>
+    
     <div class="menu-container">
       <div class="menu-toggle"></div>
     </div>
     
   </header>
   
-  <div class="menu-fullscreen">
-    <!-- <ul>
-      <li>Intro</li>
-      <li>Lifestyle</li>
-      <li>Specifications</li>
-      <li>Health & Fitness</li>
-      <li>Buy & Resellers</li>
-      <li>Contact Us</li>
-    </ul> -->
+  <div class="menu-fullscreen" style="transform-origin: right top">
+    <ul class="footer-list middle-border">
+      <li><a href="#home">Welcome</a></li>
+      <li><a href="#life">Lifestyle</a></li>
+      <li><a href="#spec">Specs</a></li>
+    </ul>
+    <ul class="footer-list">
+      <li><a href="#health">Health</a></li>
+      <li><a href="#shop">Buy</a></li>
+      <li><a href="#social">Contact</a></li>
+    </ul>
   </div>
   
-  <section class="hero">
+  <section id="home" class="hero">
     <h1 class="fade-in">Smart Watch</h1>
   </section>
 
-    <section class="lifestyle">
+    <section id="life" class="lifestyle">
       <div class="text-content">
         <div class="text">
           <h1 class="header desktop">Lifestyle</h1>
@@ -47,7 +52,7 @@
       <h1 class="header mobile">Lifestyle</h1>
     </section>
 
-    <section class="specifications">
+    <section id="spec" class="specifications">
       <div class="image-content">
 
       </div>
@@ -68,7 +73,7 @@
       </div>
     </section>
 
-    <section class="health">
+    <section id="health" class="health">
       <h1 class="header mobile">Health</h1>
       <div class="image-content mobile"></div>
       <h3 class="subheader mobile">Fitness</h3>
@@ -87,13 +92,13 @@
       <div class="image-content desktop"></div>
     </section>
 
-    <section class="buy">
+    <section id="shop" class="buy">
       <h2>Make it yours.</h2>
       <img class="buy-image" src="img/buy-image.png" alt="">
       <button type="button" name="button">RESELLERS</button>
     </section>
 
-    <section class="footer">
+    <section id="social" class="footer">
       <ul class="footer-list middle-border">
         <li><a href="#">Contact Us</a></li>
         <li><a href="#">Our Stores</a></li>
