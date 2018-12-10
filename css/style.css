@@ -381,33 +381,45 @@ footer {
     color: #FFFFFF;
   }
 
+  li {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 150%;
+    font-size: 16px;
+    margin:5px;
+  }
+
   section.hero {
     background-image:url("../img/hero-mobile.png");
     background-size: cover;
     background-repeat: no-repeat;
-    padding:0 0 0 45px;
+    padding:0 45px;
   }
-  
+
   section.hero h1 {
     padding:0;
+    font-size:60px;
   }
 
   section.lifestyle{
     flex-direction:column-reverse;
-    padding:100px 0 0 0;
+    display:flex;
+    justify-content: center;
     box-sizing: border-box;
     background-color: var(--soft-white);
   }
 
   section.lifestyle>.text-content{
     width:100%;
+    height:auto;
     align-items: flex-start;
     justify-content: flex-start;
   }
 
   section.lifestyle>.image-content{
     width:100%;
-    height:500px;
+    height:150px;
     background-position: center;
     margin:25px 0 50px 0;
   }
@@ -425,7 +437,7 @@ footer {
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-    font-size: 36px;
+    font-size: 28px;
     color: #1A1B25;
     padding: 0 0 0 25px;
   }
@@ -436,26 +448,29 @@ footer {
     font-style: normal;
     font-weight: normal;
     line-height: normal;
-    font-size: 18px;
+    font-size: 16px;
     color: #000000;
   }
 
   section.specifications{
     flex-direction:column-reverse;
-    padding:100px 0 0 0;
+    justify-content: center;
     box-sizing: border-box;
     background-color: var(--soft-white);
   }
 
   section.specifications>.text-content{
     width:100%;
+    height:auto;
   }
 
   section.specifications>.image-content{
-    height:100%;
+    height:150px;
     width:100%;
     background-image: url("../img/mobile-spec-image.png");
     background-position: center;
+    background-size: cover;
+    margin:45px 0 0 0;
   }
 
   ul {
@@ -474,8 +489,8 @@ footer {
 
   section.health{
     flex-direction:column;
-    padding:100px 0 0 0;
     box-sizing: border-box;
+    justify-content: center;
     background-color: var(--soft-white);
   }
 
@@ -486,9 +501,13 @@ footer {
 
   section.health>.image-content{
     width:100%;
-    height:200px;
+    height:150px;
     margin: 25px 0 25px 0;
     background-position: center;
+  }
+
+  section.health>.text-content>.text>.image-content {
+    width:70%;
   }
 
   .subheader {
