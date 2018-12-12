@@ -25,13 +25,20 @@ body{
 }
 
 button {
-  border:black solid 2px;
-  color:black;
-  background-color: var(--egg-shell);
+  border:var(--soft-white) solid 5px;
+  color: var(--soft-white);
+  background-color:transparent;
   border-radius: 8px;
   font-size:24px;
-  padding:15px 50px 15px 50px;
+  padding:15px 50px;
+  margin:25px 0 0 0;
+  transition:1s;
   cursor:pointer;
+  box-sizing: border-box;
+}
+
+button:hover {
+  border-color:var(--egg-shell);
 }
 
 section{
@@ -55,7 +62,7 @@ h2 {
   line-height: normal;
   font-size: 72px;
   text-align: center;
-  color: #000000;
+  color: var(--soft-white);
 }
 
 ul {
@@ -283,9 +290,12 @@ section.buy{
   width:100%;
   display:flex;
   flex-direction:column;
-  justify-content: center;
+  padding:200px 0 0 0 ;
+  box-sizing: border-box;
   align-items: center;
   background-color:var(--soft-white);
+  background-image:url('https://images.unsplash.com/photo-1494858723852-d3cc2477e12c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1656&q=80');
+  background-position-x:center;
 }
 
 .buy-image {
@@ -484,7 +494,7 @@ footer {
     font-weight: 500;
     line-height: normal;
     font-size: 36px;
-    color: #000000;
+    color: var(--soft-white);
   }
 
   section.health{
