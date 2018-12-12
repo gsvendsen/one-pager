@@ -1,7 +1,7 @@
 /* Global Styling */
 @font-face {
 font-family: 'roboto';
-src: url('font/Roboto.woff') format('woff');
+src: url('font/roboto.woff') format('woff');
 }
 
 
@@ -47,7 +47,7 @@ section{
 }
 
 h1 {
-  font-family: Roboto, sans-serif;
+  font-family: roboto, sans-serif;
   font-style: normal;
   font-weight: normal;
   line-height: normal;
@@ -56,7 +56,7 @@ h1 {
 }
 
 h2 {
-  font-family: Roboto;
+  font-family: roboto;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -71,7 +71,7 @@ ul {
 }
 
 li {
-  font-family: Roboto;
+  font-family: roboto;
   font-style: normal;
   font-weight: normal;
   line-height: 150%;
@@ -183,6 +183,7 @@ section.hero{
   background-image: url('../img/hero-image.png');
   background-size: cover;
   background-repeat: no-repeat;
+  background-position-x:left;
   margin-top: 0;
   display:flex;
   flex-direction: column;
@@ -192,12 +193,13 @@ section.hero{
 }
 
 section.hero h1{
+  font-weight: bold;
   font-size: 96px;
   color: var(--soft-white);
 }
 
 section.hero h3{
-  font-size: 50px;
+  font-size: 44px;
   font-weight:lighter;
   color: var(--soft-white);
 }
@@ -222,7 +224,7 @@ section.lifestyle{
 }
 
 .header {
-  font-family: Roboto;
+  font-family: roboto;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -332,7 +334,7 @@ div.footer-links{
 
 .footer-list>li>a{
   text-decoration: none;
-  font-family: Roboto;
+  font-family: roboto;
   font-style: normal;
   font-weight: normal;
   line-height: normal;
@@ -431,7 +433,7 @@ footer .footer-logo{
   }
 
   h1 {
-    font-family: Roboto;
+    font-family: roboto;
     font-style: normal;
     font-weight: normal;
     line-height: normal;
@@ -440,7 +442,7 @@ footer .footer-logo{
   }
 
   li {
-    font-family: Roboto;
+    font-family: roboto;
     font-style: normal;
     font-weight: normal;
     line-height: 150%;
@@ -459,6 +461,10 @@ footer .footer-logo{
   section.hero h1 {
     padding:0;
     font-size:60px;
+  }
+
+  section.hero h3{
+    font-size: 22px;
   }
 
   section.lifestyle{
@@ -492,7 +498,7 @@ footer .footer-logo{
   }
 
   .header {
-    font-family: Roboto;
+    font-family: roboto;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
@@ -503,7 +509,7 @@ footer .footer-logo{
 
   .subtext {
     padding: 0 45px 0 25px;
-    font-family: Roboto;
+    font-family: roboto;
     font-style: normal;
     font-weight: normal;
     line-height: normal;
@@ -538,7 +544,7 @@ footer .footer-logo{
   }
 
   h2 {
-    font-family: Roboto;
+    font-family: roboto;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
@@ -570,7 +576,7 @@ footer .footer-logo{
   }
 
   .subheader {
-    font-family: Roboto;
+    font-family: roboto;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
