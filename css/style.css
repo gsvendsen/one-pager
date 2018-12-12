@@ -110,7 +110,7 @@ img.logo.logo_display{
 /* Menu in header Styling */
 
 .expander {
-  width:50px;
+  width:70px;
 }
 
 .menu-container{
@@ -185,17 +185,21 @@ section.hero{
   background-repeat: no-repeat;
   margin-top: 0;
   display:flex;
-  align-items: center;
+  flex-direction: column;
+  justify-content: center;
   padding:0 0 0 100px;
   box-sizing: border-box;
 }
 
 section.hero h1{
   font-size: 96px;
-  position: absolute;
   color: var(--soft-white);
-  padding-left: 112px;
-  top: 40%;
+}
+
+section.hero h3{
+  font-size: 50px;
+  font-weight:lighter;
+  color: var(--soft-white);
 }
 
 /* Lifestyle section 2 styling */
@@ -340,8 +344,10 @@ section.footer{
 }
 
 footer {
-  height:50vh;
+  height:auto;
   width:100%;
+  padding:50px;
+  box-sizing: border-box;
 }
 
 .mobile {
@@ -404,7 +410,8 @@ footer {
     background-image:url("../img/hero-mobile.png");
     background-size: cover;
     background-repeat: no-repeat;
-    padding:0 45px;
+    background-position-y:bottom;
+    padding:0 65px 0 45px;
   }
 
   section.hero h1 {
