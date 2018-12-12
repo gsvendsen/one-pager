@@ -39,6 +39,6 @@ git clone https://github.com/gsvendsen/one-pager.git
 - [Git](https://git-scm.com/downloads "Git downloads Mac Windows Linux/Unix") 
 
 |Contributor Name|GitHub Link
-|-|
+|-|-|
 |Gustav Svendsen|https://github.com/gsvendsen
 |Fredrik Leemann|https://github.com/freddan88
