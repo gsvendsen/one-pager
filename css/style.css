@@ -18,7 +18,6 @@ src: url('font/roboto.woff') format('woff');
 
 body{
   width: 100%;
-  max-width: 1440px;
   margin: 0 auto;
   background-color: var(--egg-shell);
   font-family: roboto, sans-serif;
@@ -38,7 +37,9 @@ button {
 }
 
 button:hover {
-  border-color:var(--egg-shell);
+  border-color:var(--eerie-black);
+  color:var(--eerie-black);
+  background-color:var(--egg-shell);
 }
 
 section{
@@ -236,9 +237,10 @@ section.lifestyle{
 .subtext {
   font-style: normal;
   font-weight: normal;
-  line-height: normal;
+  line-height: 145%;
   font-size: 16px;
   color: #181818;
+  margin-top:10px;
 }
 
 .lifestyle>.image-content {
@@ -512,7 +514,7 @@ footer .footer-logo{
     font-family: roboto;
     font-style: normal;
     font-weight: normal;
-    line-height: normal;
+    line-height: 145%;
     font-size: 16px;
     color: #000000;
   }
@@ -567,12 +569,13 @@ footer .footer-logo{
   section.health>.image-content{
     width:100%;
     height:150px;
-    margin: 25px 0 25px 0;
+    margin: 25px 0 50px 0;
     background-position: center;
   }
 
   section.health>.text-content>.text>.image-content {
     width:70%;
+    margin:45px 0 10px 0;
   }
 
   .subheader {
